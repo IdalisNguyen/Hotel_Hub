@@ -15,8 +15,8 @@ db.sqlite3
 # Log files
 *.log
 
-#edit setting
-# hotelmanagement/settings.py
+# edit setting
+hotelmanagement/settings.py
 
 # Ignore the local settings file
 local_settings.py
