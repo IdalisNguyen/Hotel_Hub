@@ -80,17 +80,27 @@ WSGI_APPLICATION = 'hotelmanagement.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'mssql',
-        'NAME': 'hotel',  # Replace with your actual database name
-        'USER': 'sa',
-        'PASSWORD': '123456',  # Replace with the password for the "sa" user
-        'HOST': 'PHUOC-21103079\\SQLEXPRESS',  # Server name as shown in the screenshot
-        'PORT': '',  # SQL Express usually doesn't require specifying a port
-        'OPTIONS': {
-            'driver': 'ODBC Driver 17 for SQL Server',
-            'extra_params': 'TrustServerCertificate=yes;',  # As per the checkbox in the screenshot
-        },
+        'ENGINE': 'mysql.connector.django',
+        'NAME': 'hotel',
+        'USER': 'root',
+        'PASSWORD': '123456',
+        'HOST': '127.0.0.1',
+        'PORT': '3306',
     }
+
+
+    # 'default': {
+    #     'ENGINE': 'mssql',
+    #     'NAME': 'hotel',  # Replace with your actual database name
+    #     'USER': 'sa',
+    #     'PASSWORD': '123456',  # Replace with the password for the "sa" user
+    #     'HOST': 'PHUOC-21103079\\SQLEXPRESS',  # Server name as shown in the screenshot
+    #     'PORT': '',  # SQL Express usually doesn't require specifying a port
+    #     'OPTIONS': {
+    #         'driver': 'ODBC Driver 17 for SQL Server',
+    #         'extra_params': 'TrustServerCertificate=yes;',  # As per the checkbox in the screenshot
+    #     },
+    # }
 }
 
 
